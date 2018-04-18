@@ -1,0 +1,719 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <style>
+			body,ul,ol,h1,h2,h3,h4,h5,h6,p,input,select,textarea,dl,dd{
+	margin: 0;
+	padding: 0;
+}
+			ul,ol{
+	list-style: none;
+}
+			input,select,textarea{
+	background-color: transparent;
+	border: none;
+	outline: none;
+}
+			textarea{
+	resize: none;
+}
+			img{
+	border: none;
+	vertical-align: top;
+}
+			a{
+	text-decoration: none;
+}
+			.clearfix:after,.clearfix:before{
+	content: "";
+	display: table;
+}
+			.clearfix:after{
+	clear: both;
+}
+			.clearfix{
+	*zoom:1;
+}
+			.container{
+	width: 1920px;
+	height: 3800px;
+}
+			.nav{
+	width: 1920px;
+	height: 84px;
+	position:relative;
+}
+			.nav .phone{
+	position:absolute;
+	top:9px;
+	right:507px;
+}
+			.p1{
+	font-size:20px;
+	color:black;
+	font-family:"微软雅黑";
+	position:absolute;
+	right:369px;
+	top:6px;
+}
+			.nav .top{
+	position:absolute;
+	left:942px;
+	top:42px;
+	margin-top:-2px;
+}
+			.nav ul .aaa{
+	width: 80px;
+	height: 42px;
+	text-align:center;
+	line-height:42px;
+	font-size:14px;
+	color:black;
+	font-family:"微软雅黑";
+	float:left;
+}
+			.nav .aaa:hover{
+	border-bottom:2px solid #F66802;
+	color:#F66802;
+}
+			.main{
+	width: 1260px;
+	height: 3206px;
+	margin-left:330px;
+	position:relative;
+}
+			.main .fwxm h1{
+	font-size:34px;
+	position:absolute;
+	top:82px;
+	left:562px;
+}
+			.main .fwxm span{
+	width: 41px;
+	height: 4px;
+	background-color:#45B4FF;
+	position:absolute;
+	top:129px;
+	left:609px;
+}
+			.main .fwxm .p2{
+	font-size:14px;
+	color:black;
+	position:absolute;
+	top:144px;
+	left:440px;
+}
+			.main .back{
+	width: 1260px;
+	height: 288px;
+	background-color:#F7F5F6;
+	position:relative;
+	top:176px;
+}
+			.main .back .ul2{
+	position:absolute;
+	top:15px;
+	left:29px;
+}
+			.main .back ul .bbb{
+	width: 191px;
+	height: 264px;
+	background-color:white;
+	float:left;
+	margin-right:13px;
+	line-height:30px;
+} 
+			.main .back .yuan{
+	background-color:#F7F5F6;
+	width: 115px;
+	height: 115px;
+	border-radius:50%;
+	margin-top:24px;
+	margin-left:38px;
+}
+			.main .back .zhongxin{
+	margin-top:-35px;
+	margin-left:-40px;
+}
+			.main .back .h2{
+	font-size:18px;
+	margin-bottom:63px;
+	text-align: center;
+}
+			.main .back .p3{
+	font-size:12px;
+	text-align:center;
+}
+			.main ul .bbb:hover{
+	background-color:#45B3FE;
+	color:#fff;
+}
+			.main .gywm{
+	height: 526px;
+	position:relative;
+	margin-top:176px;
+}
+			.main .gywm h1{
+	font-size:34px;
+	position:absolute;
+	top:82px;
+	left:562px;
+}
+			.main .gywm span{
+	width: 41px;
+	height: 4px;
+	background-color:#45B4FF;
+	position:absolute;
+	top:129px;
+	left:609px;
+}
+			.main .gywm .p2{
+	font-size:14px;
+	color:black;
+	position:absolute;
+	top:144px;
+	left:440px;
+}
+			.main .gywm .p4{
+	width:1210px;
+	font-size:14px;
+	color:black;
+	position:absolute;
+	top:197px;
+	left:30px;
+	line-height:30px;
+	text-indent:2em;
+}
+			.main .gywm .p5{
+	width:1210px;
+	font-size:14px;
+	color:black;
+	position:absolute;
+	top:260px;
+	left:30px;
+	line-height:30px;
+	text-indent:2em;
+}
+			.main .wmdys h1{
+	font-size:34px;
+	position:absolute;
+	top:1074px;
+	left:562px;
+}
+			.main .wmdys span{
+	width: 41px;
+	height: 4px;
+	background-color:#45B4FF;
+	position:absolute;
+	top:1121px;
+	left:626px;
+}
+			.main .wmdys .p2{
+	font-size:14px;
+	color:black;
+	position:absolute;
+	top:1136px;
+	left:457px;
+}
+			.main .wmdys .k1{
+	width: 206px;
+	height: 186px;
+	border-radius:7px;
+	position:absolute;
+	top:1218px;
+	left:30px;
+}
+			.main .wmdys .h3{
+	font-size:24px;
+	color:#fff;
+	text-align:center;
+	margin-top:39px;
+}
+			.main .wmdys .k{
+	background-color:#45B3FE;
+}
+			.main .wmdys .kk1{
+	position:absolute;
+	top:97px;
+	left:24px;
+}
+			.main .wmdys .kkk1{
+	font-size:14px;
+	color:#fff;
+	line-height:26px;
+}
+			.main .wmdys .k2{
+	width: 206px;
+	height: 186px;
+	border-radius:7px;
+	position:absolute;
+	top:1218px;
+	left:362px;
+}
+			.main .wmdys .kk2{
+	position:absolute;
+	top:97px;
+	left:24px;
+}
+			.main .wmdys .kkk2{
+	font-size:14px;
+	color:#fff;
+	line-height:26px;
+}
+			.main .wmdys .k:hover{
+	background-color:#FB6226;
+}
+			.main .wmdys .k3{
+	width: 206px;
+	height: 186px;
+	border-radius:7px;
+	position:absolute;
+	top:1218px;
+	left:693px;
+}
+			.main .wmdys .kk3{
+	position:absolute;
+	top:97px;
+	left:24px;
+}
+			.main .wmdys .kkk3{
+	font-size:14px;
+	color:#fff;
+	line-height:26px;
+}
+			.main .wmdys .k4{
+	width: 206px;
+	height: 186px;
+	border-radius:7px;
+	position:absolute;
+	top:1218px;
+	left:1024px;
+}
+			.main .wmdys .kk4{
+	position:absolute;
+	top:97px;
+	left:24px;
+}
+			.main .wmdys .kkk4{
+	font-size:14px;
+	color:#fff;
+	line-height:26px;
+}
+			.main .yxal h1{
+	font-size:34px;
+	position:absolute;
+	top:1470px;
+	left:562px;
+}
+			.main .yxal span{
+	width: 41px;
+	height: 4px;
+	background-color:#45B4FF;
+	position:absolute;
+	top:1517px;
+	left:607px;
+}
+			.main .yxal .p5{
+	font-size:14px;
+	color:black;
+	position:absolute;
+	top:1532px;
+	left:502px;
+}
+			.main .yxal .pc{
+	position:absolute;
+	top:1567px;
+	left:543px;
+}
+			.main .yxal .pp{
+	width: 59px;
+	height: 28px;
+	font-size:12px;
+	float:left;
+	margin-right:87px;
+	text-align:center;
+}
+			.main .yxal .pp:hover{
+	border-bottom:2px solid #FB6226;
+}
+			.main .yxal .tt{
+	width: 566px;
+	height: 430px;
+}
+			.main .yxal .cs{
+	width: 566px;
+	height: 430px;
+	position:absolute;
+}
+			.ttt{
+	margin-top:50px;
+	display:inline-block;
+}
+			.main .yxal .t1{
+	position:absolute;
+	top:1690px;
+	left:30px;
+}
+			.main .yxal .t2{
+	position:absolute;
+	top:1690px;
+	left:666px;
+}
+			.main .yxal .t3{
+	position:absolute;
+	top:2151px;
+	left:30px;
+}
+			.main .yxal .t4{
+	position:absolute;
+	top:2151px;
+	left:666px;
+}
+			.main .yxal .tt:hover .cs{
+	background-color:rgba(0, 0, 0, 0.5);
+}
+			.main .yxal .tt:hover .lan{
+	opacity:1;
+}
+			.main .yxal .ttt{
+	position:absolute;
+}
+			.main .yxal .lan{
+	width: 132px;
+	height: 38px;
+	background-color:#45B3FE;
+	position:absolute;
+	top:50%;
+	left:50%;
+	margin-top:-19px;
+	margin-left:-66px;
+	opacity:0;
+}
+			.main .yxal .lan .p7{
+	font-size:14px;
+	color:#fff;
+	line-height:38px;
+	text-align:center;
+}
+			.main .jxwd h1{
+	font-size:34px;
+	position:absolute;
+	top:2617px;
+	left:562px;
+}
+			.main .jxwd span{
+	width: 41px;
+	height: 4px;
+	background-color:#45B4FF;
+	position:absolute;
+	top:2668px;
+	left:607px;
+}
+			.main .jxwd .p8{
+	font-size:14px;
+	color:black;
+	position:absolute;
+	top:2680px;
+	left:445px;
+}
+			.main  .jxwd .v1 .vv{
+	width: 90px;
+	height: 42px;
+	text-align:center;
+	line-height:42px;
+	font-size:14px;
+	color:black;
+	font-family:"微软雅黑";
+	float:left;
+}
+			.main .jxwd .v1 {
+	position:absolute;
+	top:2735px;
+	left:372px;
+}
+			.main .v1 .vv:hover{
+	border-bottom:2px solid #F06500;
+	color:#F06500;
+}
+			.main .jxwd .m1{
+	width: 393px;
+	height: 293px;
+	border:1px solid #ccc;
+	position:absolute;
+	top:2820px;
+	left:0;
+}
+			.dw{
+	width: 1260px;
+	height:440px;
+	margin-top:1820px;
+}
+			.main .jxwd .zz{
+	width: 378px;
+	height: 318px;
+	float:left;
+}
+			.main .jxwd .z1{
+	width: 360px;
+	height: 86px;
+	border:1px solid #ccc;
+	margin-top:12px;
+	margin-left:407px;
+	position:relative;
+}
+			.main .jxwd .z2{
+	width: 65px;
+	height: 65px;
+	background-color:#959492;
+	margin-top:12px;
+	margin-left:12px;
+}
+			.main .jxwd .z3{
+	font-size:24px;
+	color:#fff;
+	margin-left:15px;
+}
+			.main .jxwd .z4{
+	font-size:10px;
+	color:#fff;
+	text-align:center;
+	margin-top:12px;
+}
+			.main .jxwd .z51{
+	font-size:12px;
+	line-height:18px;
+	color:#A5909F;
+	position:absolute;
+	top:39px;
+	left:97px;
+}
+			.main .jxwd .z52{
+	font-size:12px;
+	line-height:18px;
+	color:black;
+	position:absolute;
+	top:15px;
+	left:97px;
+}
+			.zz .z1:hover{
+	border:2px solid #33A4EA;
+}
+			.main .jxwd .z1:hover .z2{
+	background-color:#33A4EA;
+}
+			.main .jxwd .z1:hover{
+	border:2px solid #33A4EA;
+}
+			.main .jxwd .z1:hover .z52{
+	color:#33A4EA;
+}
+			.xx{
+	width: 378px;
+	height: 318px;
+	float:left;
+}
+#innerWrapper{
+	width:1920px;
+	height: 300px;
+	background-color:black;
+}
+#ly-footer{
+	padding-top:50px;
+	margin-left:35%;
+	color:#FFF;
+	line-height:30px;
+}
+        </style>
+    </head>
+    <body  onUnload="alert('感谢您光临本网站')">
+    <div class="container">
+    	<div class="nav">
+    		<img src="logo.jpg" height="84" width="179" style="margin-left:361px;">
+    		<a href="#"><img src="phone.jpg" height="20" width="21" class="phone"><p class="p1"><strong>15235270073</strong></p></a>
+    		<ul class="clearfix top">
+    			<li class="aaa">关于我们</li>
+    			<li class="aaa">我们优势</li>
+    			<li class="aaa">服务项目</li>
+    			<li class="aaa">成功案例</li>
+    			<li class="aaa">教学文档</li>
+    			<li class="aaa">联系我们</li>
+    			<li class="aaa">企业官网</li>
+    		</ul>
+    		<div>
+    			<img src="banner.jpg" height="540" width="1912">
+    		</div>
+    		<div class="main">
+    			<div class="fwxm">
+    				<h1>服务项目</h1>
+    				<span></span>
+    				<p class="p2">帮助企业更有效地开展网络营销，诚信服务追求客户的感动!</p>
+    				<div class="back">
+    					<ul class=" ul2 clearfix">
+    						<li class="bbb"><div class="yuan"><img src="1.png" height="200" width="200" class="zhongxin"></div><h2 class="h2">网站制作</h2><p class="p3">办公、商城、小程序等</p></li>
+    						<li class="bbb"><div class="yuan"><img src="1.png" height="200" width="200" class="zhongxin"></div><h2 class="h2">网站制作</h2><p class="p3">办公、商城、小程序等</p></li>
+    						<li class="bbb"><div class="yuan"><img src="1.png" height="200" width="200" class="zhongxin"></div><h2 class="h2">网站制作</h2><p class="p3">办公、商城、小程序等</p></li>
+    						<li class="bbb"><div class="yuan"><img src="1.png" height="200" width="200" class="zhongxin"></div><h2 class="h2">网站制作</h2><p class="p3">办公、商城、小程序等</p></li>
+    						<li class="bbb"><div class="yuan"><img src="1.png" height="200" width="200" class="zhongxin"></div><h2 class="h2">网站制作</h2><p class="p3">办公、商城、小程序等</p></li>
+    						<li class="bbb"><div class="yuan"><img src="1.png" height="200" width="200" class="zhongxin"></div><h2 class="h2">网站制作</h2><p class="p3">办公、商城、小程序等</p></li>
+    					</ul>
+    				</div>
+    			</div>
+    			<div class="gywm">
+    				<h1>关于我们</h1>
+    				<span></span>
+    				<p class="p2">以客户中心，解决客户互联网需求，成就客户，成就自我！</p>
+    				<p class="p4">
+    					WEB基地，网聚天下商机！WEB基地，网聚天下商机！WEB基地，网聚天下商机！WEB基地，网聚天下商机！WEB基地，网聚天下商机！WEB基地，网聚天下商机！WEB基地，网聚天下商机！WEB基地，网聚天下商机！WEB基地，网聚天下商机！WEB基地，网聚天下商机！WEB基地，网聚天下商机！
+    				</p>
+    				<p class="p5">
+    					WEB基地，网聚天下商机！WEB基地，网聚天下商机！WEB基地，网聚天下商机！WEB基地，网聚天下商机！WEB基地，网聚天下商机！WEB基地，网聚天下商机！WEB基地，网聚天下商机！WEB基地，网聚天下商机！WEB基地，网聚天下商机！WEB基地，网聚天下商机！WEB基地，网聚天下商机！
+    				</p>
+    				<img src="2.jpg" height="195" width="1200" style="position:absolute; top:331px;left:31px;"  >
+    			</div>
+    			<div class="wmdys">
+    				<h1>我们的优势</h1>
+    				<span></span>
+    				<p class="p2">诚信为本，服务至上，为客户的互联网营销竭尽全力！</p>
+    				<div class="k1 k">
+    				<h3 class="h3">一站式建站</h3>
+    				<ul class="kk1">
+    					<li class="kkk1">·&nbsp;送服务器空间</li>
+    					<li class="kkk1">·&nbsp;送百度收录</li>
+    					<li class="kkk1">·&nbsp;送域名注册</li>
+    				</ul>
+    				</div>
+    				<div class="k2 k">
+    				<h3 class="h3">一站式建站</h3>
+    				<ul class="kk2">
+    					<li class="kkk2">·&nbsp;送服务器空间</li>
+    					<li class="kkk2">·&nbsp;送百度收录</li>
+    					<li class="kkk2">·&nbsp;送域名注册</li>
+    				</ul>
+    				</div>
+    				<div class="k3 k">
+    				<h3 class="h3">一站式建站</h3>
+    				<ul class="kk3">
+    					<li class="kkk3">·&nbsp;送服务器空间</li>
+    					<li class="kkk3">·&nbsp;送百度收录</li>
+    					<li class="kkk3">·&nbsp;送域名注册</li>
+    				</ul>
+    				</div>
+    				<div class="k4 k">
+    				<h3 class="h3">一站式建站</h3>
+    				<ul class="kk4">
+    					<li class="kkk4">·&nbsp;送服务器空间</li>
+    					<li class="kkk4">·&nbsp;送百度收录</li>
+    					<li class="kkk4">·&nbsp;送域名注册</li>
+    				</ul>
+    				</div>
+    			</div>
+    			<div class="yxal">
+    				<h1>优秀案例</h1>
+    				<span></span>
+    				<p class="p5">10年建站经验专业互联网建站服务提供商！</p>
+    				<ul class="pc">
+    					<li class="pp">电脑端</li>
+    					<li class="pp">手机端</li>
+    				</ul>
+    				<div class="t1 tt"><img src="3.jpg"  class="ttt"><div class="cs"><div class="lan"><p class="p7">预览效果</p></div></div></div>
+    				<div class="t2 tt"><img src="3.jpg" class="ttt"><div class="cs"></div class="lan"><p class="p7">预览效果</p></div>
+    				<div class="t3 tt"><img src="3.jpg" class="ttt"><div class="cs"></div class="lan"><p class="p7">预览效果</p></div>
+    				<div class="t4 tt"><img src="3.jpg" class="ttt"><div class="cs"></div class="lan"><p class="p7">预览效果</p></div>
+    			</div>
+    			<div class="jxwd">
+    				<h1>教学文档</h1>
+    				<span></span>
+    				<p class="p8">10年以上建站经验工程师整理总结，帮助建站员提供技术教学！</p>
+    				<ul class="v1">
+    					<li class="vv">网站设计</li>
+    					<li class="vv">IDC相关</li>
+    					<li class="vv">网站前端</li>
+    					<li class="vv">网站优化</li>
+    					<li class="vv">网站推广</li>
+    					<li class="vv">其他建站知识</li>
+    				</ul>
+    				<div class="m1"><img src="4.jpg" height="293" width="393"></div>
+    				<div class="dw">
+    				<ul class="zz clearfix">
+    					<li class="z1">
+    						<div class="z2">
+    							<h class="z3">15</h>
+    							<p class="z4">2018-2</p>
+    						</div>
+    						<p class="z52">设计制作单页网站需注意什么事项 </p>
+    						<p class="z51">大家都清楚单页网站设计其实是一种非常高<br>效、简单并且还拥有好的盈利效果的网站建设</p>
+    					</li>
+    					<li class="z1">
+    						<div class="z2">
+    							<h class="z3">15</h>
+    							<p class="z4">2018-2</p>
+    						</div>
+    						<p class="z52">设计制作单页网站需注意什么事项 </p>
+    						<p class="z51">大家都清楚单页网站设计其实是一种非常高<br>效、简单并且还拥有好的盈利效果的网站建设</p>
+    					</li>
+    					<li class="z1">
+    						<div class="z2">
+    							<h class="z3">15</h>
+    							<p class="z4">2018-2</p>
+    						</div>
+    						<p class="z52">设计制作单页网站需注意什么事项 </p>
+    						<p class="z51">大家都清楚单页网站设计其实是一种非常高<br>效、简单并且还拥有好的盈利效果的网站建设</p>
+    					</li>
+    					</ul>
+    					<ul class="xx">
+    					<li class="z1">
+    						<div class="z2">
+    							<h class="z3">15</h>
+    							<p class="z4">2018-2</p>
+    						</div>
+    						<p class="z52">设计制作单页网站需注意什么事项 </p>
+    						<p class="z51">大家都清楚单页网站设计其实是一种非常高<br>效、简单并且还拥有好的盈利效果的网站建设</p>
+    					</li>
+    					<li class="z1">
+    						<div class="z2">
+    							<h class="z3">15</h>
+    							<p class="z4">2018-2</p>
+    						</div>
+    						<p class="z52">设计制作单页网站需注意什么事项 </p>
+    						<p class="z51">大家都清楚单页网站设计其实是一种非常高<br>效、简单并且还拥有好的盈利效果的网站建设</p>
+    					</li>
+    					<li class="z1">
+    						<div class="z2">
+    							<h class="z3">15</h>
+    							<p class="z4">2018-2</p>
+    						</div>
+    						<p class="z52">设计制作单页网站需注意什么事项 </p>
+    						<p class="z51">大家都清楚单页网站设计其实是一种非常高<br>效、简单并且还拥有好的盈利效果的网站建设</p>
+    					</li>
+    				</ul>
+    				</div>
+    			</div>
+    		</div>
+    	</div>
+    </div>
+<div id="innerWrapper">
+		<div id="ly-footer">
+			<!--联系我们&nbsp;|&nbsp;联系我们&nbsp;|&nbsp;联系我们&nbsp;|&nbsp;
+			联系我们&nbsp;|&nbsp;联系我们&nbsp;|&nbsp;联系我们&nbsp;|&nbsp;<br>
+			e游天下网 版权所有 Copyright 2013-2016@ 蝴蝶工作室<br>
+			为了您正常浏览页面，推荐使用分辨率1080 X 800以上-->
+			<script>
+			var footerContet;
+			footerContet="联系我们 | 网站地图 | 旅游调查 | <br>";
+			footerContet+="联系我们 | 网站地图 | 旅游调查 | <br>";
+			footerContet+="e游天下网 版权所有 Copyright 2013-2016@ 蝴蝶工作室<br>";
+			footerContet+="e游天下网 版权所有 Copyright 2013-2016@ 蝴蝶工作室<br>";
+			document.write(footerContet);
+			
+
+			</script>
+		</div>
+	</div>
+    <!--
+    <div class="foot">
+    		<img src="foot.jpg" height="287" width="1920">
+    	</div>
+    	-->
+    </body>
+</html>
